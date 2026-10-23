@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 touch /tmp/pwned
 
 echo "apiVersion: v1
