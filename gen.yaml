@@ -1,0 +1,8 @@
+apiVersion: examples.config.k8s.io/v1
+kind: Callback
+metadata:
+  name: cb
+  annotations:
+    config.kubernetes.io/function: |
+      exec:
+        path: ./callback.sh
